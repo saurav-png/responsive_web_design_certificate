@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #353535;
+    color: #f5f6f7;
+    font-family: 'DotGothic16';
+    font-size: 17px;
+    font-weight: 200;
+}
+  
+h1{
+    font-size: 32px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+#survey-form {
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: 5px dashed;
+    padding: 2em;
+    margin-bottom: 0.7em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea {
+    background-color: #d6d6d6;
+    border: none;
+    color: #000000;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    text-align: center;
+    gap:6px;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+  
+input[type="submit"] {
+    background-color: #4d4d4dce;
+    border: none;
+    display: block;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 7px auto;
+    width: 50%;
+    height: 40px;
+}  
+
+input[type="file"] {
+    padding: 1px 2px;
+}
