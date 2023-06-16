@@ -13,7 +13,7 @@ This repo is to show the certificate projects of responsive web design provided 
 
 | Project         | Web View                                           |
 |-----------------|----------------------------------------------------|
-| Survey Form     | [View](https://codepen.io/saurav-png/full/NWEKZxX) |
+| Survey Form     | [View](https://codepen.io/saurav-png/full/NWENxZy) |
 
 ---
 <br>
