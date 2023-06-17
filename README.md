@@ -14,6 +14,7 @@ This repo is to show the certificate projects of responsive web design provided 
 | Project         | Web View                                           |
 |-----------------|----------------------------------------------------|
 | Survey Form     | [View](https://codepen.io/saurav-png/full/NWENxZy) |
+| Tribute Page    | [View](https://codepen.io/saurav-png/full/PoxNOqy) |
 
 ---
 <br>
