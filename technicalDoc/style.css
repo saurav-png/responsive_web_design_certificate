@@ -78,16 +78,16 @@ p {
 }
 
 code {
-  display: block;
-  white-space: pre-wrap;
-  background-color: #222;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-family: "Courier New", monospace;
-  font-size: 16px;
-  color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: block !important;
+  white-space: pre-wrap !important;
+  background-color: #222 !important;
+  padding: 10px !important;
+  margin-bottom: 20px !important;
+  font-family: "Courier New", monospace !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 ul {
