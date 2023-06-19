@@ -33,9 +33,55 @@
           </code>
           <ul>
             <li>In the above example, the CSS rule opens with a selector. This selects the HTML element that we are going to style. In this case, we are styling level one headings (h1).</li>
-            <li>We then have a set of curly braces {}.</li>
+            <li>We then have a set of curly braces { }.</li>
             <li>Inside the braces will be one or more declarations, which take the form of property and value pairs. We specify the property (color in the above example) before the colon, and we specify the value of the property after the colon (red in this example).</li>
             <li>This example contains two declarations, one for color and the other for font-size. Each pair specifies a property of the element(s) we are selecting (h1 in this case), then a value that we'd like to give the property.</li>
+          </ul>
+        </section>
+    
+        <section class="main-section" id="Selectors">
+          <header>CSS Selectors</header>
+          <p>Selectors simply refer to the HTML elements to which CSS rules apply; they’re what is actually being “selected” for each rule.</p>
+          <p>The following subsections don’t cover every selector available, but there are some of the most used ones.</p>
+          <ul>
+            <li><h3>Universal Selector</h3></li>
+            <p>The universal selector will select elements of any type, hence the name “universal”, and the syntax for it is a simple asterisk. In the example below, every element would have the color: purple; style applied to it.</p>
+            <code>
+              * {
+              color: purple;
+              }
+            </code>
+            <li><h3>Type Selectors</h3></li>
+            <code>
+              &lt;!-- index.html --&gt;
+
+              &lt;div&gt;Hello, World!&lt;/div&gt;
+              &lt;div&gt;Hello again!&lt;/div&gt;
+              &lt;p&gt;Hi...&lt;/p&gt;
+              &lt;div&gt;Okay, bye.&lt;/div&gt;
+            </code>
+            <code>
+              /* style.css */
+
+              div {
+                color: white;
+              }
+            </code>
+            <p>Here, all three &lt;div&gt; elements would be selected, while the &lt;p&gt; element wouldn’t be.</p>
+            <li><h3>ID Selectors</h3></li>
+            <p>ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element:</p>
+            <code>
+              &lt;!-- index.html --&gt;
+
+              &lt;div id="title"&gt;My Awesome 90's Page&lt;/div&gt;
+            </code>
+            <code>
+              /* styles.css */
+
+              #title {
+                background-color: red;
+              }
+            </code>
           </ul>
         </section>
       </main>
