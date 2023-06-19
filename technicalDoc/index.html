@@ -25,7 +25,7 @@
           <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.
 
             For example, you can decide to have the main heading on your page to be shown as large red text. The following code shows a very simple CSS rule that would achieve the styling described above:</p>
-          <code>
+          <code class="language-css">
             h1 {
             color: red;
             font-size: 5em;
@@ -46,13 +46,13 @@
           <ul>
             <li><h3>Universal Selector</h3></li>
             <p>The universal selector will select elements of any type, hence the name “universal”, and the syntax for it is a simple asterisk. In the example below, every element would have the color: purple; style applied to it.</p>
-            <code>
+            <code class="language-css">
               * {
               color: purple;
               }
             </code>
             <li><h3>Type Selectors</h3></li>
-            <code>
+            <code class="language-html">
               &lt;!-- index.html --&gt;
 
               &lt;div&gt;Hello, World!&lt;/div&gt;
@@ -60,7 +60,7 @@
               &lt;p&gt;Hi...&lt;/p&gt;
               &lt;div&gt;Okay, bye.&lt;/div&gt;
             </code>
-            <code>
+            <code class="language-css">
               /* style.css */
 
               div {
@@ -75,7 +75,7 @@
 
               &lt;div id="title"&gt;My Awesome 90's Page&lt;/div&gt;
             </code>
-            <code>
+            <code class="language-css">
               /* styles.css */
 
               #title {
@@ -85,5 +85,11 @@
           </ul>
         </section>
       </main>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" />
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+        <script>
+          // Initialize Prism
+        Prism.highlightAll();
+      </script>
 </body>
 </html>
