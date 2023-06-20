@@ -71,7 +71,7 @@
             <p>Here, all three &lt;div&gt; elements would be selected, while the &lt;p&gt; element wouldn’t be.</p>
             <li><h3>ID Selectors</h3></li>
             <p>ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element:</p>
-            <code>
+            <code class="language-html">
               &lt;!-- index.html --&gt;
 
               &lt;div id="title"&gt;My Awesome 90's Page&lt;/div&gt;
@@ -83,6 +83,60 @@
                 background-color: red;
               }
             </code>
+          </ul>
+        </section>
+    
+        <section class="main-section" id="Box_Model">
+          <header>CSS Box Model</header>
+          <p>Every single thing on a webpage is a rectangular box. These boxes can have other boxes in them and can sit alongside one another.</p>
+          <p>You can get a rough idea of how this works by sticking a border on every item on the page like this:</p>
+          <code class="language-css">
+            * {
+              border: 2px solid red;
+            }
+          </code>
+          <p>There are other attributes that's important for learning box models too!</p>
+          <code class="language-css">
+            div {
+              padding: 20px;
+              margin: 3em;
+            }
+          </code>
+          <p>The only real complication here is that there are many ways to manipulate the size of these boxes, and the space between them, using padding, margin, and border.</p>
+          <p>To sum it up briefly:</p>
+          <ul>
+            <li>padding increases the space between the border of a box and the content of the box.</li>
+            <li>margin increases the space between the borders of a box and the borders of adjacent boxes.</li>
+            <li>border adds space (even if it’s only a pixel or two) between the margin and the padding.</li>
+          </ul>
+        </section>
+    
+        <section class="main-section" id="Layouts">
+          <header>CSS Layouts</header>
+          <p>CSS page layout techniques allow us to take elements contained in a web page and control where they're positioned relative to the following factors: their default position in normal layout flow, the other elements around them, their parent container, and the main viewport/window.</p>
+          <h3>Normal flow</h3>
+          <p>Normal flow is how the browser lays out HTML pages by default when you do nothing to control page layout. Let's look at a quick HTML example:</p>
+          <code class="language-html">
+            &lt;p&gt;I love my cat.&lt;/p&gt;
+
+            &lt;ul&gt;
+              &lt;li&gt;Buy cat food&lt;/li&gt;
+              &lt;li&gt;Exercise&lt;/li&gt;
+              &lt;li&gt;Cheer up friend&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;p&gt;The end!&lt;/p&gt;
+          </code>
+          <p>By default, the browser will display this code as follows:</p>
+          <iframe src="https://live-samples.mdn.mozilla.net/en-US/docs/Learn/CSS/CSS_layout/Introduction/_sample_.normal_flow.html" style="width: 70%; height: 200px; background-color: white ;border: none;"></iframe>
+          <p>Starting with a well-structured HTML document is very important because you can then work with the way things are laid out by default rather than fighting against it.</p>
+          <p>The methods that can change how elements are laid out in CSS are:</p>
+          <ul>
+            <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">display</a> property — Standard values such as block, inline or inline-block can change how elements behave in normal flow, for example, by making a block-level element behave like an inline-level element. We also have entire layout methods that are enabled via specific display values, for example, <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">CSS Grid</a> and <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Flexbox</a>, which alter how child elements are laid out inside their parents.</li>
+            <li>Floats — Applying a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">float</a> value such as left can cause block-level elements to wrap along one side of an element, like the way images sometimes have text floating around them in magazine layouts.</li>
+            <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">position</a> property — Allows you to precisely control the placement of boxes inside other boxes. static positioning is the default in normal flow, but you can cause elements to be laid out differently using other values, for example, as fixed to the top of the browser viewport.</li>
+            <li>Table layout — Features designed for styling parts of an HTML table can be used on non-table elements using display: table and associated properties.</li>
+            <li>Multi-column layout — The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_multicol_layout" target="_blank">Multi-column</a> layout properties can cause the content of a block to layout in columns, as you might see in a newspaper.</li>
           </ul>
         </section>
       </main>
