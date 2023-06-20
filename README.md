@@ -11,10 +11,11 @@ This repo is to show the certificate projects of responsive web design provided 
     <img src="https://img.shields.io/badge/Device%20Compatibility-Cross--Platform-brightgreen">
 </div>
 
-| Project         | Web View                                           |
-|-----------------|----------------------------------------------------|
-| Survey Form     | [View](https://codepen.io/saurav-png/full/NWENxZy) |
-| Tribute Page    | [View](https://codepen.io/saurav-png/full/PoxNOqy) |
+| Project                    | Web View                                           |
+|----------------------------|----------------------------------------------------|
+| Survey Form                | [View](https://codepen.io/saurav-png/full/NWENxZy) |
+| Tribute Page               | [View](https://codepen.io/saurav-png/full/PoxNOqy) |
+| Technical Documentation <br>(Few extra changes made)    | [View](https://codepen.io/saurav-png/full/QWJEQoJ) |
 
 ---
 <br>
