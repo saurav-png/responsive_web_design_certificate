@@ -44,6 +44,22 @@ body {
   margin-bottom: 2em;
 }
 
+#navbar p{
+  font-size: 18px;
+  position: absolute;
+  bottom: 120px;
+}
+
+.nav-link:last-child{
+  position: absolute;
+  bottom: 20px;
+}
+
+.nav-link:nth-last-child(2) {
+  position: absolute;
+  bottom: 70px;
+}
+
 .nav-link:hover {
   color: #bbb;
   font-size: 20px;
