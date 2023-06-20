@@ -179,3 +179,57 @@ a:hover{
 section {
   animation: fadeIn 1s ease-in-out;
 }
+
+/* Media queries for different devices */
+@media (max-width: 767px) {
+  /* Adjustments for smaller devices */
+  #navbar{
+    width: 100px;
+  }
+  #navbar header{
+    white-space: normal;
+    word-break: break-word;
+  }
+  .nav-link {
+    margin-bottom: 1em;
+    font-size: 14px;
+  }
+
+  #navbar p {
+    margin-bottom: 2em;
+  }
+
+  #main-doc {
+    margin-left:unset ;
+    margin-left: 120px;
+  }
+  section{
+  padding: 20px;
+  font-size: 16px;
+  }
+
+  code{
+    /* padding-left: 8px!important; */
+    font-size: 12px !important;
+  }
+
+  ul{
+    margin-left: 0px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for medium-sized devices */
+  #navbar {
+    width: 180px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  #navbar p {
+    margin-bottom: 2em;
+  }
+}
