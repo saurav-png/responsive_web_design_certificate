@@ -165,3 +165,17 @@ a:hover{
     color: #333;
   }
 }
+
+/* Animation styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+}
