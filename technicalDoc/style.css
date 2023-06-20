@@ -125,3 +125,43 @@ a:hover{
   text-decoration: underline;
   font-size: 19px;
 }
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color:rgb(160, 160, 160);
+    color: #333;
+  }
+
+  section {
+    background-color: #dfdfdf;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+    color:#333;
+  }
+
+  code {
+    background-color: #858585;
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(243, 243, 243, 0.3);
+  }
+
+  ul {
+    color: #bbb;
+  }
+  
+  #main-doc header{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  li {
+    color: #333;
+  }
+
+  a{
+    color: #0d39cc;
+  }
+
+  p{
+    color: #333;
+  }
+}
