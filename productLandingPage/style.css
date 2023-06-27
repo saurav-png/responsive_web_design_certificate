@@ -325,6 +325,10 @@ li{
         margin-top: 20px;
     }
 
+    .mc-title{
+        font-size: 2.9rem;
+    }
+
     #Features {
         flex-direction: column;
         text-align: center;
@@ -361,6 +365,10 @@ li{
 @media (max-width: 360px) {
     .nav-link {
         margin: 10px 4px 10px 2px;
+    }
+
+    .mc-title{
+        font-size: 1.9rem;
     }
     
     .arc-title {
