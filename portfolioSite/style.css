@@ -8,6 +8,7 @@
 :root{
     --text-color: #f0f0f0;
     --hover-color: #3a3d40;
+    --background-color: #000;
 }
 
 html {
@@ -78,7 +79,7 @@ body {
         width: 100%;
         height: 100vh;
         color: var(--text-color);
-        background-color: #000; /* if browser don't support gradient */
+        background-color: var(--background-color); /* if browser don't support gradient */
         background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     }
     
@@ -182,13 +183,13 @@ body {
 
 /* SOCIALS */
 
-    #profile-link {
+    #socials {
         margin-top: 50px;
         text-align: center;
         margin-bottom: 4rem;
     }
     
-    #profile-link h2 {
+    #socials h2 {
         font-size: 6rem;
         margin-bottom: 10px;
     }
@@ -198,10 +199,10 @@ body {
         justify-content: space-evenly;
     }
     
-    .social-icons a {
+    .social-icons #profile-link {
         display: inline-block;
         margin: 0 10px;
-        color: #000;
+        color: var(--background-color);
         font-size: 5.5rem;
         text-decoration: none;
         transition: transform 0.3s;
@@ -213,6 +214,34 @@ body {
     }
 
 /* END- SOCIALS */
+
+/* FOOTER */
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        background-color: var(--background-color);
+        font-size: 2rem;
+        font-weight: 590;
+        text-align: center;
+        color:var(--text-color);
+    }
+
+    footer a .fa-github {
+        font-size: 4rem;
+        text-decoration: none;
+        transition: transform 0.3s;
+        color: var(--text-color);
+    }
+
+    footer a .fa-github:hover {
+        color: var(--hover-color);
+        transform: scale(1.2) rotate(360deg);
+    }
+
+/* END-FOOTER */
 
 /* MEDIA QUERIES */
 
@@ -233,12 +262,20 @@ body {
       font-size: 1.2rem;
     }
 
-    #profile-link h2 {
+    #socials h2 {
         font-size: 4rem;
     }
         
-    .social-icons a {
+    .social-icons #profile-link {
         font-size: 3.5rem;
+    }
+
+    footer{
+        font-size:1.5rem
+    }
+
+    footer a .fa-github {
+        font-size: 3rem;
     }
   }
 
@@ -268,12 +305,20 @@ body {
         font-size: 0.9rem;
       }
 
-    #profile-link h2 {
+    #socials h2 {
         font-size: 3rem;
       }
       
-    .social-icons a {
+    .social-icons #profile-link {
         font-size: 2.5rem;
+    }
+
+    footer{
+        font-size:1.2rem
+    }
+
+    footer a .fa-github {
+        font-size: 2rem;
     }
 }
 
@@ -290,12 +335,20 @@ body {
         font-size: 0.7rem;
       }
     
-    #profile-link h2 {
+    #socials h2 {
         font-size: 2rem;
     }
     
-    .social-icons a {
+    .social-icons #profile-link {
         font-size: 1.5rem;
+    }
+
+    footer{
+        font-size:0.9rem
+    }
+
+    footer a .fa-github {
+        font-size: 1.6rem;
     }
 }
 /* END-MEDIA QUERIES */
