@@ -1,5 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap);
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:rgb(74, 74, 228);
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+#navbar li {
+    margin: 0 20px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 900;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 450px){
+    #navbar ul{
+        padding: 0 1.5rem;
+    }
+
+    #navbar li{
+        margin: 0 10px
+    }
+
+    #navbar a{
+        font-size: 1.6rem;
+        padding: 2rem 0.6rem;
+    }
+}
+
+#navbar a:hover{
+    font-size: 2.5rem;
+    color: lightgreen;
 }
