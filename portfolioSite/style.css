@@ -22,39 +22,73 @@ body {
     padding: 0;
 }
 
+
+/* NAVBAR */
+    #navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background:rgb(74, 74, 228);
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0 2rem;
+    }
+
+    #navbar li {
+        margin: 0 20px;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        color: #f0f0f0;
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 900;
+        padding: 2rem;
+    }
+
+    #navbar a:hover{
+        font-size: 2.5rem;
+        color: lightgreen;
+    }
+
+/* END-NAVBAR */
+
+/* ABOUT */
 #welcome-section {
-    height: 100vh;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        color: #f0f0f0;
+        background-color: #000; /* if browser don't support gradient */
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    }
+    
+    #welcome-section h1{
+        font-size: 6rem;
+        font-weight: 700;
+        text-align: center;
+    }
 
-#navbar {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background:rgb(74, 74, 228);
-}
+    #welcome-section p {
+        font-size: 3rem;
+        font-weight: 200;
+        font-style: italic;
+        color: rgb(205, 28, 78);
+        margin: 0 4rem;
+    }
 
-#navbar ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 2rem;
-}
-
-#navbar li {
-    margin: 0 20px;
-}
-
-#navbar a{
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-size: 2.2rem;
-    font-weight: 900;
-    padding: 2rem;
-}
+/* END-ABOUT */
 
 @media only screen and (max-width: 450px){
     #navbar ul{
@@ -69,9 +103,22 @@ body {
         font-size: 1.6rem;
         padding: 2rem 0.6rem;
     }
+
+    #welcome-section h1{
+        font-size:5rem;
+    }
+
+    #welcome-section p{
+        font-size: 2.5rem;
+    }
 }
 
-#navbar a:hover{
-    font-size: 2.5rem;
-    color: lightgreen;
+@media only screen and (max-width: 300px){
+    #welcome-section h1{
+        font-size: 3.5rem;
+    }
+
+    #welcome-section p{
+        font-size: 2rem;
+    }
 }
